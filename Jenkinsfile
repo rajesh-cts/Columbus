@@ -1,7 +1,7 @@
 pipeline {
     agent {label 'Win1'} 
      tools {
-    jdk "jdk-17.0.3.1"
+    jdk 'JAVA_HOME'
   }
     stages {
     	
@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat "mvn clean install test"
+                bat 'mvn clean install test'
             }
         }
     }
