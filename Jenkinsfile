@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'Win1'} 
+    agent {label env.AGENT_LABEL} 
      tools {
     jdk 'JAVA_HOME'
   }
