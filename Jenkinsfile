@@ -1,6 +1,8 @@
 pipeline {
     agent {label 'Win1'} 
-      
+     tools {
+    jdk 'jdk-17.0.3.1'
+  }
     stages {
     	
         stage('Checkout') {
