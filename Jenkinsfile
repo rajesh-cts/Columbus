@@ -2,7 +2,7 @@ pipeline {
     agent {label 'Win1'} 
      tools {
         maven 'Maven 3.3.9'
-        jdk 'jdk8'
+        jdk 'jdk-17.0.3.1'
     }
     stages {
         stage('Checkout') {
