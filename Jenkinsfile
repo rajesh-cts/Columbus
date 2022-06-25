@@ -1,8 +1,8 @@
 pipeline {
     agent {label 'Win1'} 
      tools {
-        maven 'Maven 3.3.9'
-        jdk 'jdk-17.0.3.1'
+       maven "MAVEN"
+        jdk "JDK"
     }
     stages {
     	stage('Initialize'){
